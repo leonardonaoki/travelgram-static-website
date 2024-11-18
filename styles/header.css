@@ -10,9 +10,21 @@ header .container{
   align-items: center;
 }
 
+@media (width < 80em){
+  header .container{
+    flex-direction: column;
+  }
+}
+
 #profile{
   display:flex;  
   gap:32px;
+}
+
+@media (width < 80em){
+  #profile{
+    flex-direction: column;
+  }
 }
 
 #profile > div{
@@ -24,6 +36,13 @@ header .container{
   height: 176px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+@media (width <= 80em){
+  #profile img{
+    max-width: 7.5rem;
+    max-height: 7.5rem;
+  }
 }
 
 #profile h1{
@@ -40,6 +59,13 @@ header .container{
   gap:16px;
 
   width: 280px;
+}
+
+@media (width <= 80em){
+  #info{
+    margin-top:2rem;
+    margin-right:1rem;
+  }
 }
 
 #info li{

@@ -11,3 +11,9 @@ main img{
   height:286px;
   object-fit: cover;
 }
+@media (width < 80em){
+  main{
+    gap:1rem;
+    padding-block: 1rem;
+  }
+}
